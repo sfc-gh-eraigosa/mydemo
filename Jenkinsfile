@@ -3,7 +3,7 @@
 pipeline {
     agent none
     triggers {
-        cron('*/10 * * * *')
+        cron('*/3 * * * *')  // every 3 minutes
     }
     options {
         buildDiscarder(logRotator(numToKeepStr: '10'))
